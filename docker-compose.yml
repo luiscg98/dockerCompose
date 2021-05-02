@@ -25,7 +25,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      - VIRTUAL_HOST=luiscg.net
+      - VIRTUAL_HOST=luiscg.me
 
 
 
@@ -36,7 +36,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      - VIRTUAL_HOST=apinode.luiscg.net
+      - VIRTUAL_HOST=apinode.luiscg.me
 
 
 volumes:
