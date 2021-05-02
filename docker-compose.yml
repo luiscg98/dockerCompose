@@ -19,35 +19,25 @@ services:
 
 
   angular:
-    container_name: 'App-Angular'
+    container_name: 'chatRealTimeAngular-App'
     build:
-      context: ~/src/dockerangular
+      context: ~/src/chatRealTimeAngular
       dockerfile: Dockerfile
     restart: always
     environment:
-      - VIRTUAL_HOST=angular.midominio.com
+      - VIRTUAL_HOST=luiscg.net
 
 
 
   node:
-    container_name: 'Api-Node'
+    container_name: 'chatRealTimeNode-App'
     build:
-      context: ~/src/nodeneko
+      context: ~/src/chatRealTimeNode
       dockerfile: Dockerfile
     restart: always
     environment:
-      - VIRTUAL_HOST=apinode.midominio.com
+      - VIRTUAL_HOST=apinode.luiscg.net
 
-
-
-  netcore:
-    container_name: 'Api-NetCore'
-    build:
-      context: ~/src/nekocore
-      dockerfile: Dockerfile
-    restart: always
-    environment:
-      - VIRTUAL_HOST=apinetcore.midominio.com
 
 volumes:
   certs:
