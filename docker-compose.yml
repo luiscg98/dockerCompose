@@ -21,7 +21,7 @@ services:
   angular:
     container_name: 'App-Angular'
     build:
-      context: ~/src/dockerangular
+      context: ~/src/chatRealTimeAngular
       dockerfile: Dockerfile
     restart: always
     environment:
@@ -32,7 +32,7 @@ services:
   node:
     container_name: 'Api-Node'
     build:
-      context: ~/src/nodeneko
+      context: ~/src/chatRealTimeNode
       dockerfile: Dockerfile
     restart: always
     environment:
